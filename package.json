@@ -1,0 +1,28 @@
+{
+  "name": "shrinkurl",
+  "version": "1.0.0",
+  "description": "Shorten your URL",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davupls/shrinkURL.git"
+  },
+  "keywords": [
+    "url"
+  ],
+  "author": "David Mclean",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davupls/shrinkURL/issues"
+  },
+  "homepage": "https://github.com/davupls/shrinkURL#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

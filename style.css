@@ -1,8 +1,54 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    /* overflow-x: hidden; */
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ================================= */
 
 body{
     font-family: 'Poppins', sans-serif;
@@ -10,6 +56,7 @@ body{
 
 h1, h2, h3{
     color: #232127;
+    font-weight: 700;
 }
 
 p{
@@ -30,14 +77,19 @@ nav{
     margin-bottom: 100px;
 }
 
+.header-con__image{
+    overflow-x: hidden;
+}
+
 .header-wrap__image{
-    margin: 0 0 50px 20px;   
+    margin: 0 0 20px 25px;   
     width: 500px;
 }
 
 .banner-title{
     font-size: 41px;
-    margin-bottom: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
     text-align: center;
 }
 
@@ -70,6 +122,7 @@ nav{
 
 .url-form{
     background-color: #232127;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,7 +133,11 @@ nav{
 }
 
 .url-form__input{
+    border: 0 solid;
+    border-radius: 8px;
     margin-bottom: 10px;
+    height: 30px;
+    padding: 7.5px 0px;
     width: 70vw;
 }
 
@@ -94,10 +151,19 @@ nav{
 
 /* -------------------------- */
 
+.article-wrap__header{
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
 .articles-wrap{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.article-wrap__p{
+    margin-bottom: 60px;
 }
 
 
@@ -114,6 +180,16 @@ nav{
 }
 
 
+.article__h3{
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+.article__p{
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
 .promo{
     background-color: #2f293a;
     display: flex;
@@ -124,10 +200,48 @@ nav{
 }
 
 
+.promo__title{
+    color: white;
+    font-size: 27px;
+    margin-bottom: 25px;
+}
+
 
 
 
 footer{
     background-color: #232127;
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_img{
+    margin: 20px 0;
+}
+
+h4{
+    margin-bottom: 7px;
+    text-align: center;
+}
+
+aside ul{
+    margin-bottom: 15px;
+}
+
+aside ul li{
+    list-style-type: none;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+aside ul li a{
+    color: #bfbfbf;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav img{
+    margin: 0 10px;
 }
