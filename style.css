@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3{
+    color: #232127;
+}
+
+p{
+    color: #bfbfbf;
+    text-align: center;
+}
+
+
+nav{
+    margin: 35px 0 10px 10px;
+}
+
+.header-wrap{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    margin-bottom: 100px;
+}
+
+.header-wrap__image{
+    margin: 0 0 50px 20px;   
+    width: 500px;
+}
+
+.banner-title{
+    font-size: 41px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.banner-p{
+    font-size: 16.5px;
+    line-height: 1.7;
+    margin: 0 20px 30px 20px;
+}
+
+.btn{
+    background-color: #51dbdb;
+    border: 0 solid;
+    border-radius: 30px;
+    color: aliceblue;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 20px;
+    margin: 0 auto;
+    height: 45px;
+    width: 160px;
+}
+
+
+/* Url Input  */
+.form-wrap{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.url-form{
+    background-color: #232127;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 200px;
+    width: 80vw;
+}
+
+.url-form__input{
+    margin-bottom: 10px;
+    width: 70vw;
+}
+
+.url-form__btn{
+    background-color: #51dbdb;
+    border: 0 solid;
+    border-radius: 10px;
+    padding: 15px 10px;
+    width: 70vw;
+}
+
+/* -------------------------- */
+
+.articles-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.article-con{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    /* background-color: #232127; */
+    border-radius: 5px;
+    margin-bottom: 40px;
+    height: 200px;
+    width: 85vw;
+}
+
+
+.promo{
+    background-color: #2f293a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+}
+
+
+
+
+
+footer{
+    background-color: #232127;
+    color: white;
+}
