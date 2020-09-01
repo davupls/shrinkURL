@@ -149,6 +149,32 @@ nav{
     width: 70vw;
 }
 
+/* Reply  */
+.resData {
+    background-color: #232127;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    margin: 0 0 80px 0 ;
+    width: 90wv;
+}
+
+.resData__h1{
+    background-color: beige;
+    border-radius: 10px;
+    color: #569a08;
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+    width: 75vw;
+}
+
+
+
+
+
 /* -------------------------- */
 
 .article-wrap__header{

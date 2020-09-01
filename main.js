@@ -23,7 +23,7 @@ async function fetchData(urlVariable) {
 
     function placeData(){
         console.log(data.hashid + " working")
-        resData.innerHTML = data.hashid;
+        resData.innerHTML = url + data.hashid;
     }
 
     placeData();
