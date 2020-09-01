@@ -1,33 +1,33 @@
-let btn = document.querySelector(".url-form__btn"),
-    urlValue = document.querySelector(".url-form__input");
+const btn = document.querySelector(".url-form__btn");
+const urlValue = document.querySelector(".url-form__input");
+const resData = document.querySelector(".resData__h1")
 
-let value;    
+let value = urlValue.value;   
+const url = "https://rel.ink/api/links/";
+const link = {
+        "url" : "https://www.youtube.com/watch?v=_KbFNKWdnvE"
+    }
 
-btn.addEventListener("click", () => {
-    console.log(urlValue.value)
-});
+const settings = {
+    method: 'POST',
+    headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(link),
+}
 
-// function requestApi() {
-//     value = urlValue.value;
-//     console.log(value);
-    // let object;
-    // if (urlValue != "") {
-    //     object = urlValue.value;
-    //     fetchData();
-    // } else {
-    //     return
-    // }
+async function fetchData(urlVariable) {
+    const response = await fetch(urlVariable, settings);
+    const data = await response.json();
 
-    // function fetchData(){
-    //     fetch("https://rel.ink/api/links/", {
-    //         method: "POST",
-    //         headers: {
-    //             "Content-Type": "application/json",
-    //     },
-    //         body: JSON.stringify(object)
-    //     })
-    //         .then(response => response.json())
-    //         .then(data => console.log(data.hashid))
-    //         .catch(error => console.log("Something went wrong " + error))
-    // }
-// }
+    function placeData(){
+        console.log(data.hashid + " working")
+        resData.innerHTML = data.hashid;
+    }
+
+    placeData();
+    return data.hashid;
+}
+
+fetchData(url);
