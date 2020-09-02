@@ -53,6 +53,12 @@ function checkInput(){
 
             const currentEle = document.querySelector(".articles-wrap"); 
             document.body.insertBefore(newCon, currentEle);
+
+            newbtn.addEventListener("click", () => {
+                // newh2.textContent.select();
+                // document.execCommand("copy")
+                navigator.clipboard.writeText(newh2.textContent)
+            })
         }
 
         placeData();
