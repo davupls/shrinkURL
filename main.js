@@ -10,6 +10,7 @@ function checkInput(){
     let userInputValue = input.value;
     let link = { "url" : `${userInputValue}`}
     const url = "https://rel.ink/api/links/";
+    const urlSearch = "https://rel.ink/"
 
     // Fetch Data Method Settings
     const settings = {
@@ -34,15 +35,22 @@ function checkInput(){
             let newCon = document.createElement("SECTION")
             let newDiv = document.createElement("DIV")
             let newh2 = document.createElement("H2")
+            let newbtn = document.createElement("BUTTON")
 
             newCon.className = "new__Con"
             newDiv.className = "new__Wrap" 
             newh2.className = "new__Link"
+            newbtn.className = "new__btn"
 
-            let infoDiv = document.createTextNode(`${data.hashid}`);
+            let infoDiv = document.createTextNode(`${urlSearch}${data.hashid}`);
+            let btnText = document.createTextNode("Copy Link");
+
             newCon.appendChild(newDiv)
             newDiv.appendChild(newh2)
             newh2.appendChild(infoDiv)
+            newDiv.appendChild(newbtn)
+            newbtn.appendChild(btnText)
+
             const currentEle = document.querySelector(".articles-wrap"); 
             document.body.insertBefore(newCon, currentEle);
         }
