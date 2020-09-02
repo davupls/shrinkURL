@@ -26,14 +26,25 @@ function checkInput(){
         console.log(data.hashid)
 
         function placeData(){
-            const newURL = url + data.hashid;
-            let newDiv = document.createElement("h2")
-            let infoDiv = document.createTextNode(`${data.hashid}`);
+            createNewTable();
+        }
 
-            newDiv.appendChild(infoDiv)
-            const currentEle = document.querySelector(".resData"); 
-            document.body.insertBefore(newDiv, currentEle);
-            resData.innerHTML = url + data.hashid;
+        function createNewTable(){
+            const newURL = url + data.hashid;
+            let newCon = document.createElement("SECTION")
+            let newDiv = document.createElement("DIV")
+            let newh2 = document.createElement("H2")
+
+            newCon.className = "new__Con"
+            newDiv.className = "new__Wrap" 
+            newh2.className = "new__Link"
+
+            let infoDiv = document.createTextNode(`${data.hashid}`);
+            newCon.appendChild(newDiv)
+            newDiv.appendChild(newh2)
+            newh2.appendChild(infoDiv)
+            const currentEle = document.querySelector(".articles-wrap"); 
+            document.body.insertBefore(newCon, currentEle);
         }
 
         placeData();
